@@ -45,7 +45,7 @@ final class BankView: UIView {
     let customerInBankStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .vertical
+        stackView.axis = .horizontal
         stackView.alignment = .fill
         stackView.distribution = .fillEqually
         stackView.backgroundColor = .red
@@ -119,6 +119,28 @@ final class BankView: UIView {
         return label
     }()
     
+    private let testLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "test1"
+        label.font = UIFont.preferredFont(forTextStyle: .largeTitle)
+        label.textAlignment = .center
+        label.textColor = .purple
+        label.backgroundColor = .systemIndigo
+        return label
+    }()
+    
+    private let testLabel2: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "test2"
+        label.font = UIFont.preferredFont(forTextStyle: .largeTitle)
+        label.textAlignment = .center
+        label.textColor = .purple
+        label.backgroundColor = .systemIndigo
+        return label
+    }()
+    
     func setUpConstantsOnView() {
         let safeLayout = safeAreaLayoutGuide
         self.addSubview(topLayerStackView)
@@ -136,6 +158,10 @@ final class BankView: UIView {
         
         customerInBankStackView.addArrangedSubview(watingCustomerLineStackView)
         customerInBankStackView.addArrangedSubview(doBankingCustomerLineStackView)
+        
+        
+        watingCustomerLineStackView.addArrangedSubview(testLabel)
+        doBankingCustomerLineStackView.addArrangedSubview(testLabel2)
         
         NSLayoutConstraint.activate([
             topLayerStackView.topAnchor.constraint(equalTo: safeLayout.topAnchor),
