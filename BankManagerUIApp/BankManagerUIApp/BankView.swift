@@ -30,14 +30,44 @@ final class BankView: UIView {
         stackView.backgroundColor = .yellow
         return stackView
     }()
-    
-    let currentStatusStackView: UIStackView = {
+
+    let currentStatusLabelStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .horizontal
         stackView.alignment = .fill
         stackView.distribution = .fillEqually
         stackView.spacing = 20
+        stackView.backgroundColor = .white
+        return stackView
+    }()
+
+    let customerInBankStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.alignment = .fill
+        stackView.distribution = .fillEqually
+        stackView.backgroundColor = .red
+        return stackView
+    }()
+    
+    let watingCustomerLineStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.alignment = .fill
+        stackView.distribution = .fillEqually
+        stackView.backgroundColor = .white
+        return stackView
+    }()
+    
+    let doBankingCustomerLineStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.alignment = .fill
+        stackView.distribution = .fillEqually
         stackView.backgroundColor = .white
         return stackView
     }()
@@ -95,13 +125,17 @@ final class BankView: UIView {
       
         topLayerStackView.addArrangedSubview(buttonStackView)
         topLayerStackView.addArrangedSubview(timerLabel)
-        topLayerStackView.addArrangedSubview(currentStatusStackView)
+        topLayerStackView.addArrangedSubview(currentStatusLabelStackView)
+        topLayerStackView.addArrangedSubview(customerInBankStackView)
 
         buttonStackView.addArrangedSubview(addTenCustomerButton)
         buttonStackView.addArrangedSubview(resetButton)
         
-        currentStatusStackView.addArrangedSubview(waitingStatusLabel)
-        currentStatusStackView.addArrangedSubview(doBankingStatusLabel)
+        currentStatusLabelStackView.addArrangedSubview(waitingStatusLabel)
+        currentStatusLabelStackView.addArrangedSubview(doBankingStatusLabel)
+        
+        customerInBankStackView.addArrangedSubview(watingCustomerLineStackView)
+        customerInBankStackView.addArrangedSubview(doBankingCustomerLineStackView)
         
         NSLayoutConstraint.activate([
             topLayerStackView.topAnchor.constraint(equalTo: safeLayout.topAnchor),
