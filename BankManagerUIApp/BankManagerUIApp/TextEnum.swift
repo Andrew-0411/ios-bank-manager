@@ -10,7 +10,6 @@ import Foundation
 enum BankingMessage {
     static let depositMessage: String = " - 예금"
     static let loanMessage: String = " - 대출"
-
 }
 
 enum ButtonText {
