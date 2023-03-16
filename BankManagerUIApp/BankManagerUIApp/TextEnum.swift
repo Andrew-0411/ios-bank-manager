@@ -15,4 +15,5 @@ enum BankingMessage {
 
 enum ButtonText {
     static let addTenCustomer: String = "고객 10명 추가"
+    static let reset: String = "초기화"
 }
