@@ -47,19 +47,28 @@ final class BankView: UIView {
         return button
     }()
     
+    let timerLabel: UILabel = {
+        let label = UILabel ()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "업무시간"
+        label.font = UIFont.preferredFont(forTextStyle: .title1)
+        label.textAlignment = .center
+        return label
+    }()
+    
     func setUpConstantsOnView() {
         
         let safeLayout = safeAreaLayoutGuide
         self.addSubview(topLayerStackView)
       
         topLayerStackView.addArrangedSubview(buttonStackView)
+        topLayerStackView.addArrangedSubview(timerLabel)
         
         buttonStackView.addArrangedSubview(addTenCustomerButton)
         buttonStackView.addArrangedSubview(resetButton)
         
         NSLayoutConstraint.activate([
             topLayerStackView.topAnchor.constraint(equalTo: safeLayout.topAnchor),
-            topLayerStackView.bottomAnchor.constraint(equalTo: safeLayout.bottomAnchor),
             topLayerStackView.trailingAnchor.constraint(equalTo: safeLayout.trailingAnchor),
             topLayerStackView.leadingAnchor.constraint(equalTo: safeLayout.leadingAnchor)
         ])
