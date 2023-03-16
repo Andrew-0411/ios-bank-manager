@@ -30,10 +30,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		582052B529C2F5060084449B /* BankingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BankingType.swift; path = ../BankingType.swift; sourceTree = "<group>"; };
-		582052B729C2F51C0084449B /* BankManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BankManager.swift; path = ../BankManager.swift; sourceTree = "<group>"; };
+		582052B529C2F5060084449B /* BankingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingType.swift; sourceTree = "<group>"; };
+		582052B729C2F51C0084449B /* BankManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankManager.swift; sourceTree = "<group>"; };
 		582052B929C2F5590084449B /* BankQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BankQueue.swift; path = ../BankQueue.swift; sourceTree = "<group>"; };
-		582052BB29C2F5750084449B /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Customer.swift; path = ../Customer.swift; sourceTree = "<group>"; };
+		582052BB29C2F5750084449B /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Customer.swift; path = ../../Customer.swift; sourceTree = "<group>"; };
 		5899903529BA109F00D4D272 /* BankDesk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BankDesk.swift; path = ../../BankDesk.swift; sourceTree = "<group>"; };
 		5899903729BA1EB700D4D272 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = ../../Extension.swift; sourceTree = "<group>"; };
 		71BBD4BD29BA131500E70105 /* TextEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEnum.swift; sourceTree = "<group>"; };
@@ -55,10 +55,7 @@
 		C7694E6D259C3EC00053667F = {
 			isa = PBXGroup;
 			children = (
-				582052BB29C2F5750084449B /* Customer.swift */,
 				582052B929C2F5590084449B /* BankQueue.swift */,
-				582052B729C2F51C0084449B /* BankManager.swift */,
-				582052B529C2F5060084449B /* BankingType.swift */,
 				C7694E78259C3EC00053667F /* BankManagerConsoleApp */,
 				C7694E77259C3EC00053667F /* Products */,
 			);
@@ -79,6 +76,9 @@
 				5899903729BA1EB700D4D272 /* Extension.swift */,
 				5899903529BA109F00D4D272 /* BankDesk.swift */,
 				71BBD4BD29BA131500E70105 /* TextEnum.swift */,
+				582052B729C2F51C0084449B /* BankManager.swift */,
+				582052B529C2F5060084449B /* BankingType.swift */,
+				582052BB29C2F5750084449B /* Customer.swift */,
 			);
 			path = BankManagerConsoleApp;
 			sourceTree = "<group>";
