@@ -12,3 +12,7 @@ enum BankingMessage {
     static let loanMessage: String = " - 대출"
 
 }
+
+enum ButtonText {
+    static let addTenCustomer: String = "고객 10명 추가"
+}
