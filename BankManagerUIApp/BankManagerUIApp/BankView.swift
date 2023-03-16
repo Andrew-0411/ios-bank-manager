@@ -70,7 +70,7 @@ final class BankView: UIView {
     let waitingStatusLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "대기중"
+        label.text = "\(statusText.waitingStatus)"
         label.font = UIFont.preferredFont(forTextStyle: .largeTitle)
         label.textAlignment = .center
         label.textColor = .white
@@ -81,7 +81,7 @@ final class BankView: UIView {
     private let doBankingStatusLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "업무중"
+        label.text = "\(statusText.doBankingStatus)"
         label.font = UIFont.preferredFont(forTextStyle: .largeTitle)
         label.textAlignment = .center
         label.textColor = .white

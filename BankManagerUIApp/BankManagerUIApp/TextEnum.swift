@@ -16,3 +16,8 @@ enum ButtonText {
     static let addTenCustomer: String = "고객 10명 추가"
     static let reset: String = "초기화"
 }
+
+enum statusText {
+    static let waitingStatus: String = "대기중"
+    static let doBankingStatus: String = "업무중"
+}
